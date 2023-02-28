@@ -1,0 +1,20 @@
+<div class="table-wrapper">
+  <table>
+    <tr>
+      <th><h2>Description</h2></th>
+      <th class="qty"><h2>Qty</h2></th>
+      <th class="prc"><h2>Unit Price</h2></th>
+      <th class="ttl"><h2>Total Price</h2></th>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td class="dsc">{{ item.description }}</td>
+      <td class="nondsc">{{ item.quantity }}</td>
+      <td class="nondsc">$ {{ item.price }}</td>
+      <td class="nondsc">$ {{ item.total }}</td>
+    </tr>
+  </table>
+</div>
+<div class="footer">
+  <label>Notes:</label>
+  <h1>{{ service.getTotal() }}</h1>
+</div>

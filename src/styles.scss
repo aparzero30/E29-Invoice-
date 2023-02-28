@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: blue;
+  --secondary-color: rgb(234, 54, 174);
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
